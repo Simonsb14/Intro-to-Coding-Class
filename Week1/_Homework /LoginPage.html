@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coding for Learning!</title>
+
+<style> 
+	.container{
+		display:flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+	}
+	form {
+		background-color: #F1F1F1}
+
+	.form{
+		display: flex;
+
+	}
+	
+	button{
+		background-color: #8CC151;
+		color: white;
+		padding: 14px 20px;
+		margin: 20px 0;
+		border: 1px solid #ccc;
+		width: 30%
+	}
+
+	.button{
+		display: flex;
+		align-items: space-around;
+		justify-content: center;
+
+	}
+
+	.container 
+	{
+		padding: 20 px;
+		width: 70%;
+	}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+	<h1> Coding for Learning! </h1>
+<form>
+	<!--  login input boxes -->
+	<div class = "container">
+		<label for ="user"> <b> Username </b> </label>
+		<input type = "text"placeholder = "Enter Username" name = "user" required>
+
+		<label for = "token"> <b> Password or Token </b> </label>
+		<input type = "text" placeholder = "Enter Password or Token" name = "token" required>
+
+		<!-- submit button, go or get started -->
+		<button type = "submit"> Get Started! </button>
+
+	</div>
+	
+	<div>
+	<!-- remember me, keep signed in -->
+	<label>
+		<input type = "checkbox" checked = "checked" name = "remember"> Remember Me Please 
+	</label>
+
+	</div>
+
+<div class = "container" style = "background-color: #F1F1F1F1">
+</div>
+
+</form>
+
+</body>
+</html>
