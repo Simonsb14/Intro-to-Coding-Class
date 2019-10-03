@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+			@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+		html { 
+		font-family: 'Roboto', sans-serif; 
+	}
+
+		.fixed-header{
+			/*background: white;
+			height: 60px;
+			padding: 40px;*/
+			width: 100%;
+			padding: 30px;
+			text-align: center;
+			background: white;
+			color:black;
+			font-size: 20px;
+		}
+
+		.navigation {
+			list-style:none;
+			margin: 0;
+
+			display: flex;
+  			flex-flow: row wrap;
+  			justify-content: flex-start;
+  			/*overflow: hidden;*/
+  			background-color: #ffff;
+  		}
+
+  		.navigation a {
+  			/*float: left;*/
+  			display:block;
+ 			 color: #767676;
+  			align-content: flex-start;
+  			/*padding: 14px 20px;*/
+  			padding: 1em;
+ 
+  		}
+
+  		.login {
+  			list-style:none;
+			margin: 0;
+
+			display: flex;
+  			flex-flow: row wrap;
+  			justify-content: flex-end;
+  			/*overflow: hidden;*/
+  			background-color: #ffff;
+  		}
+
+  		.login a {
+  			display:block;
+ 			 color: #767676;
+  			text-align: center;
+  			/*padding: 14px 20px;*/
+  			padding: 1em;
+  			align-content: flex-end;
+  		}
+
+
+  		.flex-container{
+  			padding: 10px , 20px ;
+  			margin: 10px;
+  			list-style: none;
+
+  			/*display: -webkit-box;
+  			display: -moz-box;
+  			display: -ms-flexbox;
+  			display: -webkit-flex;*/
+  			display: flex;
+
+  			-webkit-flex-flow: row wrap;
+  			justify-content: space-around;
+  		}
+
+  		/*.flex-container {*/
+			  /*flex: 25%;
+			  max-width: 25%;
+			  padding: 0 4px;
+			}
+*/
+		.flex-container img {
+			  margin: 10px;
+			  vertical-align: middle;
+			}
+
+  		.flex-item{ 
+  		background: #F1F1F1;
+  		padding: 5px, 20px;
+  		width: 500px;
+  		height: 300px;
+  		margin-top: 10px; 
+
+  		line-height: 200px;
+  		color: black;
+  		font-weight: solid;
+  		/*font-size: 2em;*/
+  		text-align: center;
+  	}
+
+  	div.scrollmenu {
+  background-color: #ffff;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #777;
+  /*text-align: center*/
+  align-content: space-around;
+  padding: 14px;
+  text-decoration: none;
+  
+}
+
+div.scrollmenu a:hover {
+  color: black;
+}
+
+.bu
+
+	</style>
+</head>
+
+
+<body>
+	<fixed-header>
+		<div id = "logo"> Unsplash </div>
+
+		<!--  <div class = "header"> 
+			<h1> Unsplash </h1> -->
+		</div>
+
+		<ul class="navigation">
+			 <li> <a>Collections</a></li>
+			 <li>  <a>Explore</a> </li>
+			 <button> submit a photo </button>
+	<!-- 	</ul> -->
+
+		<!-- <ul class = "login"> -->
+			 <li>  <a> Login </a> </li>
+			<button class = 'Join'> Join Free </button>
+		</ul>
+	
+	<div class="scrollmenu">
+  <a>Editorial</a>
+  <a href="#Wallpapers">Wallpapers</a>
+  <a href="#Textures">Textures & Patterns</a>
+  <a href="#Nature">Nature</a>
+  <a href="#Current">Current Events</a>
+  <a href="#Architecture">Architecture</a>
+  <a href="#Business">Business & Work</a>  
+  <a href="#Film">Film</a>
+  <a href="#Animals">Animals</a>
+  <a href="#Art">Arts & Culture</a>
+  <a href="#Travel">Travel</a>
+  <a href="#Fashion">Fashion</a>
+  <a href="#Food">Food & Drink</a>
+  <a href="#people">People</a>
+  <a href="#Health">Health</a>
+</div>
+
+	</header>
+
+
+		<ul class = "flex-container">
+			<img src="https://source.unsplash.com/random/300x200">
+			<img src="https://source.unsplash.com/collection/190727/300x200">
+			<img src="https://source.unsplash.com/random/300x200">
+			<img src="https://source.unsplash.com/collection/190727/300x200">
+
+			<img src="https://source.unsplash.com/random/300x200">
+			<img src="https://source.unsplash.com/collection/190727/300x200">
+			<img src="https://source.unsplash.com/random/300x200">
+			<img src="https://source.unsplash.com/collection/190727/300x200">
+
+			<img src="https://source.unsplash.com/random/300x200">
+			<img src="https://source.unsplash.com/collection/190727/300x200">
+			<img src="https://source.unsplash.com/random/300x200">
+			<img src="https://source.unsplash.com/collection/190727/300x200">
+			
+				<!-- <li class = "flex-item"> Feat Img 1 </li>
+				<li class = "flex-item"> Feat Img 2 </li>
+				<li class = "flex-item"> Feat Img 3 </li>
+				<li class = "flex-item"> Feat Img 4 </li>
+				<li class = "flex-item"> Feat Img 5 </li>
+				<li class = "flex-item"> Feat Img 6 </li> -->
+			</ul>
+</body>
+</html>
