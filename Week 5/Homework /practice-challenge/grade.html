@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Nicole got <span id="returnHere"></span> questions right, giving her a <span id="returnAgain"></span>% on the exam.
+	
+		<script type="text/javascript">
+			//add dates into variables
+			let questions= 10;
+			let correct=9;
+			
+			//do some math and store in a variable
+			
+			let percent= (correct / questions) * 100;
+			//locate the div with the id of returnHere and store in a variable
+			
+			let answerprint1=document.querySelector("#returnHere");
+			let answerprint2=document.querySelector("#returnAgain");
+			
+			//concatinate the string with the new variables inside the HTML div that you just created a variable for.
+			
+			answerprint1.innerHTML=correct;
+			answerprint2.innerHTML=percent;
+		</script>
+		
+</body>
+</html>
