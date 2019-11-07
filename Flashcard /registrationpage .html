@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<style>
+		body { font-family: 'Roboto', sans-serif; 
+  		/*background-image: linear-gradient(to right, white , lightgrey);*/
+	}
+
+	/** {
+  box-sizing: border-box
+  padding: 50px;
+  margin: 20px;*/
+
+	}
+/* Style the form - display items horizontally */
+.constainer-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/*.details-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}*/
+	/* padding containers */
+	.container{
+		padding: 50px;
+		background-color: white;
+	}
+
+/*input fields full*/
+ input[type="firstname"], input[type="lastname"],input[type="number"], input[type="telephone"],input[type="email"], input[type="psw"],input[type="psw-repeat"]
+{
+	width: 25%;
+	padding: 10px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f5f5f5;
+}
+/*how do I mark sections as required using a red asterisk*/
+/*form input.required:after {
+	color: red;
+	content: " *";*/
+}
+/*highlight which box*/
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+p{
+	  /*font-style: italic;*/
+	  /*font-size: 75%;*/
+	  color: #4F5B62;
+	  font-weight: lighter;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+/* submit button */
+.registerbtn {
+  background-color: #000A12;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+  .details {
+  background-color: #f5f5f5;
+  /*text-align: center;*/
+  width: 25%;
+  align-items: center;
+  padding: 50px;
+
+	</style>
+
+
+</head>
+
+
+<body>
+
+	<form>
+		<div class = "container">
+		<h1>Create Account</h1>
+		<p> Please fill in this form to create your Flashcard account</p>
+		<hr>
+
+			<h2> Profile Information </h2>
+			<!-- fill in text -->
+				<label for ="firstname"><b>First Name</b></label><br>
+					<input type="firstname" placeholder="First Name" name="firstname" required><br>
+
+				<label for ="lastname"><b>Last Name</b></label><br>
+					<input type="lastname" placeholder="Last Name" name="lastname" required><br>
+
+				<label for = "age"><b> Age</b> </label><br>
+					<input type="number" required><br>
+
+				<label for ="telephone"><b>Mobile Number</b></label><br>
+					<input type="telephone" placeholder="(xxx)-xxx-xxxx" name="telephone"><br>
+
+				<label for ="email"><b>Email</b></label><br>
+					<input type="email" placeholder="youremail@domain.com" name="email" required><br>
+
+				<label for ="psw"><b>Password</b></label><br>
+					<input type="psw"  placeholder="secret password" name="psw" required><br>
+
+				<label for ="psw-repeat"><b>Confirm Password</b></label><br>
+					<input type="psw-repeat"  placeholder="secret password" name="psw-repeat" required><br>
+
+</div>
+
+	<div class="container details">
+		<h2> Profile Details </h2>
+		<p> Tell us a little bit more about your account. </p>
+		<hr>
+			<!-- radio buttons -->
+				<label><input type="radio" name="profileType" value="option A" checked> Student</label><br>
+				<label><input type="radio" name="profileType" value="option B"> Instructor</label><br>
+
+		<p> Do you want practice reminders & catch me ups?</p>
+				<input type="checkbox" id="chboxA" name="chBoxGroup" value="option A" checked="">
+				<label for="chboxA">Email</label><br>
+
+				<input type="checkbox" id="chboxB" name="chBoxGroup" value="option B">
+				<label for="chboxB">Text Message</label><br>
+
+		</div>
+
+<!-- submit form button -->
+		<br><button type="submit" class="registerbtn">Register</button>
+
+		</div>
+
+		<div class="container signin">
+	    	<p>Already have an account? <a href="#">Sign in</a>.</p>
+	  	</div>
+
+	</form>
+</body>
+</html>
